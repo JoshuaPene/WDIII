@@ -134,13 +134,14 @@ h6{
 }
 
 .header {
-    display: inline-flex;
-    align-items: center;
-}
-.header-2{
-  max-width: 1720px;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  align-items: center;
+  background-size: cover;
+  background-position:center;
+  height: 100%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .how_to_text_top{
@@ -250,11 +251,9 @@ p{
 */
 
 .navbar{
-  display: inline-block;
-  position:fixed;
-  width: 100%;
-  background-color: rgb(255, 255, 255, 50%);
-  max-height: 100px;
+  background-color: rgb(255, 255, 255, 90%);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav a{
@@ -265,7 +264,7 @@ text-decoration:none;
   text-decoration:none;
   text-align: center;
   font-size: 1.4rem;
-  padding:20px;
+  padding: 0 20px;
   color: rgb(0, 0, 0);
   font-family: 'Raleway', sans-serif;
   font-weight:700;
@@ -338,7 +337,7 @@ flex-direction: column;
 }
 
 .video-container {
-z-index: -100;
+/*z-index: -100; try this if it looks broken later*/
 width:100%;
 height:90%;
 -webkit-mask-image: linear-gradient(to bottom, black 80%,transparent 100%);
