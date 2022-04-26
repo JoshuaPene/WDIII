@@ -164,7 +164,7 @@ h6{
 
 .list_head{
   font-family: 'Raleway', sans-serif;
-  margin: 0 20%;
+  margin: 0 5%;
   text-align: left;
   color: #ffffff;
 }
@@ -189,8 +189,8 @@ h6{
 }
 
 .list_head li {
-margin-left: 10%;
-margin-right: 10%;
+margin-left: 5%;
+margin-right: 5%;
 padding-top: 20px;
 }
 
@@ -199,9 +199,29 @@ padding-top: 20px;
   left: -1%;
 }
 
-.list_head row{
+
+.second_indents_list{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 20%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.second_indents_list li{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+.second_indents_list li span{
+  position: relative;
+  left: -1%;
+}
+
+.second_indents_list row{
   width: 1400px;
 }
+
 
 p{
   color: #ffffff;
