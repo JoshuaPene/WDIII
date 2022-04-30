@@ -6,15 +6,10 @@ font-family: 'Raleway', sans-serif;
 */
 
 .bg-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  object-fit: cover;
-  z-index: -1;
+  background-size: cover;
   padding-top: 150px;
-  opacity: 40%;
+  background-image: url("images/bot-image.jpg");
+  margin: 10%;
 }
 
 body{
@@ -26,6 +21,7 @@ body{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
+   padding-left: 20%;
 }
 
 .bullet_text_mid p{
@@ -266,6 +262,7 @@ text-decoration:none;
   position:relative;
   text-align: center;
   color: #fff
+  padding-right:30%;
 }
 
 .small-space{
