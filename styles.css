@@ -6,15 +6,10 @@ font-family: 'Raleway', sans-serif;
 */
 
 .bg-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  object-fit: cover;
-  z-index: -1;
-  padding-top: 150px;
-  opacity: 40%;
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(images/bot-image.jpg);
+  -webkit-mask-image: linear-gradient(to top, black 70%,transparent 100%);
 }
 
 body{
@@ -26,6 +21,7 @@ body{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
+   padding-left: 20%;
 }
 
 .bullet_text_mid p{
@@ -47,6 +43,10 @@ body{
   opacity: 50%;
 }
 
+.col-6{
+  padding-bottom: 40px;
+}
+
 .extra_information{
   margin: 0 20%;
 }
@@ -66,16 +66,16 @@ body{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 15px 75px;
   color: rgb(50, 50, 50);
-  padding-top: 100px;
 }
 
-.options-footer li {
+.options-footer{
   list-style: none;
   display: inline-block;
   justify-content: space-between;
   text-decoration: none;
+  text-align: center;
 }
 
 .green{
@@ -209,13 +209,12 @@ padding-top: 20px;
   left: 0%;
 }
 
-p{
-  color: #ffffff;
-  font-size: 1.0rem;
-  line-height: 1.2rem;
-  margin: 0;
+.mid_exercise{
+  margin: 0 5%;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-weight: 700;
 }
-
 .navbar{
   background-color: rgb(255, 255, 255, 90%);
   padding-top: 10px;
@@ -246,6 +245,16 @@ text-decoration:none;
   width: 250px;
 }
 
+p{
+  color: #ffffff;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+  margin: 0;
+}
+
+.padding-row{
+  padding-bottom: 110px;
+}
 
 .position{
   position: absolute;
@@ -266,6 +275,7 @@ text-decoration:none;
   position:relative;
   text-align: center;
   color: #fff
+  padding-right:40%;
 }
 
 .small-space{
@@ -280,8 +290,7 @@ text-decoration:none;
 }
 
 .space{
-  padding-top:250px;
-  padding-bottom:250px;
+  padding-top:200px;
   text-decoration: none;
 }
 
@@ -308,8 +317,35 @@ text-decoration:none;
   width: 1400px;
 }
 
+.third_indents_list{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 10%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.third_indents_list li{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+.third_indents_list li span{
+  position: relative;
+  left: -1%;
+}
+
+.third_indents_list row{
+  width: 1400px;
+}
+
 .tagline-video{
-  width:75%;
+  width:55%;
+  padding-bottom: 40px;
+}
+
+.tagline-video:hover{
+  opacity:100%;
 }
 
 .text-alignment{
@@ -317,7 +353,6 @@ text-decoration:none;
   padding-top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .top-text{
@@ -333,7 +368,7 @@ text-decoration:none;
 /*z-index: -100; try this if it looks broken later*/
 width:100%;
 height:90%;
--webkit-mask-image: linear-gradient(to bottom, black 80%,transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 70%,transparent 100%);
  mask-image: linear-gradient(to bottom, transparent black 80%,transparent 100%);
 top:0;
 left:0;
